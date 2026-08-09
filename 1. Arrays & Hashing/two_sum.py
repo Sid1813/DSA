@@ -1,3 +1,5 @@
+# Find two numbers in the array that add up to the target and return their indices.
+
 class Solution:
 
     def twoSum(self, nums, target):
