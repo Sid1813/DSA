@@ -3,7 +3,9 @@
 # Version 2 (Better Solution)
 
 class Solution:
-    def longestCommonPrefix(self, words):
+
+    def longestCommonPrefix(self, words: list[str]) -> str:
+
         smallest = min(words, key = len)
         for word in words:
             while smallest != word[:len(smallest)]:
@@ -13,9 +15,12 @@ class Solution:
 # Version 1 (First Solution)
 
 class Solution:
-    def longestCommonPrefix(self, words):
+
+    def longestCommonPrefix(self, words: list[str]) -> str:
+
         lst = []; common_prefix = ""
         smallest = min(words, key = len)
+
         for i in range(len(smallest)):
             for word in words:
                 lst.append(word[i])

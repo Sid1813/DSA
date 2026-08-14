@@ -4,7 +4,7 @@
 
 class Solution:
 
-    def twoSum(self, numbers, target):
+    def twoSum(self, numbers: list[int], target: int) -> list[int]:
 
         left = 0
         right = len(numbers) - 1
@@ -24,11 +24,11 @@ class Solution:
 
 class Solution:
 
-    def twoSum(self, nums, target):
+    def twoSum(self, numbers: list[int], target: int) -> list[int]:
 
         seen = {}
 
-        for i, num in enumerate(nums):
+        for i, num in enumerate(numbers):
             complement = target - num
             if(complement in seen):
                 return (seen[complement]+1, i+1)

@@ -1,7 +1,9 @@
 # Valid Palindrome: Determine whether a string reads the same forward and backward, ignoring non-alphanumeric characters and case.
 
 class Solution:
-    def isPalindrome(self, s):
+
+    def isPalindrome(self, s: str) -> bool:
+        
         lst = []
         for character in s:
             if character.isalnum():

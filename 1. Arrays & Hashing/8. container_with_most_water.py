@@ -2,7 +2,7 @@
 
 class Solution:
 
-    def maxArea(self, height):
+    def maxArea(self, height: list[int]) -> int:
 
         left = 0
         right = len(height)-1

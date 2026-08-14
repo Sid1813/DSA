@@ -3,7 +3,7 @@
 # DSA solution
 
 class Solution:
-    def containsDuplicate(self, nums):
+    def containsDuplicate(self, nums: list[int]) -> bool:
 
         seen = set()
 
@@ -19,7 +19,7 @@ class Solution:
 
 class Solution:
     
-    def containsDuplicate(self, nums):
+    def containsDuplicate(self, nums: list[int]) -> bool:
 
         if (len(nums) == len(set(nums))):
             return False

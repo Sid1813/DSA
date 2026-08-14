@@ -1,7 +1,8 @@
 # Valid Anagram: Determine whether two strings contain the same characters with the same frequencies.
 
 class Solution:
-    def isAnagram(self, word1, word2):
+    
+    def isAnagram(self, word1: str, word2: str) -> bool:
 
         dict1 = {}; dict2 = {}
 
