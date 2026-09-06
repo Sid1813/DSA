@@ -22,4 +22,10 @@ class Solution:
             return True
         else:
             return False
+
+# Pythonic Solution for the same
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
     
