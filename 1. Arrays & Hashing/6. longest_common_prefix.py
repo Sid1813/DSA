@@ -9,7 +9,7 @@ class Solution:
         smallest = min(words, key = len)
         for word in words:
             while smallest != word[:len(smallest)]:
-                smallest = smallest[:-1]
+                smallest = smallest[:-1] # smallest[:-1] --> Python string slicing to obtain everything but the last letter in smallest
         return smallest
 
 # Version 1 (First Solution)
