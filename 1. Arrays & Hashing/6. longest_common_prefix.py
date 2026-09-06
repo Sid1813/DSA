@@ -29,7 +29,7 @@ class Solution:
             else:
                 return common_prefix # if the above if condition does NOT hold true, that means there is a mismatch in letters between the words at index i. Therefore we return whatever common prefix we have so far
             lst = [] # This is to ensure list - lst starts from scratch to now compare the letters at the next index of each word in words
-        return common_prefix # This return is for, if the else statement had not been triggered even once thoughout all iterations of the loop i.e if the smallest word in wordsis the common prefix amongst every word in words
+        return common_prefix # This return is for, if the else statement had not been triggered even once thoughout all iterations of the loop i.e if the smallest word in words IS the common prefix amongst every word in words
                 
 
 
